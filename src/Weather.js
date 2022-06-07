@@ -7,24 +7,15 @@ export default function Weather() {
       <div className="search-form">
         <form>
           <div className="row">
-            <div className="col-8">
+            <div className="col-9">
               <input
                 type="search"
                 placeholder="Enter a city.."
                 className="form-control"
               />
             </div>
-            <div className="col-2">
+            <div className="col-3">
               <input type="submit" className="btn btn-primary" />
-            </div>
-            <div class="col-2">
-              <button id="current-location">
-                <img
-                  src={process.env.PUBLIC_URL + "/current-location.png"}
-                  alt="currrent location"
-                  width="40px"
-                />
-              </button>
             </div>
           </div>
         </form>
