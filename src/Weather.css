@@ -1,21 +1,21 @@
-ul {
+.Weather ul {
   margin: 2px 0;
   padding: 0;
 }
-li {
+.Weather li {
   list-style: none;
   color: #0000ff;
   font-size: 19px;
   font-weight: 100;
   line-height: 23px;
 }
-li::first-letter {
+.Weather li::first-letter {
   text-transform: capitalize;
 }
-a {
+.Weather a {
   text-decoration: none;
 }
-.search-form {
+.Weather .search-form {
   max-width: 700px;
   border: 1px solid #87ceeb;
   border-radius: 10px;
@@ -26,22 +26,22 @@ a {
   background-color: #d9ecee;
 }
 
-.weather-app {
+.Weather .weather-app {
   max-width: 700px;
   border: 1px solid #87ceeb;
   border-radius: 10px;
   border-style: outset;
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 10px;
   padding: 20px;
   background-color: #d9ecee;
 }
-.weather-parameters {
+.Weather .weather-parameters {
   color: #000080;
   margin-bottom: 0;
   margin-top: 20px;
 }
-.weather-parameters strong {
+.Weather .weather-parameters strong {
   font-size: 60px;
   font-weight: 400;
   line-height: 1;

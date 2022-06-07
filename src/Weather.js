@@ -34,17 +34,6 @@ export default function Weather() {
           <div className="col-4 weather-parameters">
             <strong id="temperature">20</strong>
             <span className="degree-symbol">ºC</span>
-            <span className="units">
-              (
-              <a href="#" id="celsius-link" className="active">
-                ºC
-              </a>{" "}
-              |
-              <a href="#" id="fahrenheit-link">
-                ºF
-              </a>
-              )
-            </span>
             <ul>
               <li>
                 Humidity: <span id="humidity">70</span>%
@@ -55,7 +44,11 @@ export default function Weather() {
             </ul>
           </div>
           <div className="col-3" id="weather-icon">
-            <img src="http://openweathermap.org/img/wn/10d@2x.png" id="icon" />
+            <img
+              src="http://openweathermap.org/img/wn/10d@2x.png"
+              id="icon"
+              alt="weather icon"
+            />
           </div>
           <div className="col-5" id="city-time-description">
             <h1 id="city">Tehran</h1>
