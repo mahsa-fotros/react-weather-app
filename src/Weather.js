@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import FormattedDate from "./FormattedDate";
 import "./Weather.css";
 
 export default function Weather(props) {
@@ -9,13 +10,14 @@ export default function Weather(props) {
   function handleResponse(response) {
     console.log(response.data);
     setWeatherData({
-      ready: truue,
+      ready: true,
       city: response.data.name,
       temperature: Math.round(response.data.main.temp),
       humidity: response.data.main.humidity,
       wind: response.data.wind.speed,
       description: response.data.weather[0].description,
       icon: response.data.weather[0].icon,
+      date: new Date(response.data.dt * 1000),
     });
   }
   function handleSubmit(event) {
@@ -69,7 +71,9 @@ export default function Weather(props) {
                 {weatherData.city}
               </h1>
               <ul>
-                <li id="date">Monday 16:47</li>
+                <li id="date">
+                  <FormattedDate date={weatherData.date} />
+                </li>
                 <li id="description" className="text-capitalize">
                   {weatherData.description}
                 </li>
