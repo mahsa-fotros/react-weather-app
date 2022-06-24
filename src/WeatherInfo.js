@@ -20,7 +20,7 @@ export default function WeatherInfo(props) {
             </ul>
           </div>
           <div className="col-4" id="weather-icon">
-            <WeatherIcon code={props.data.icon} />
+            <WeatherIcon code={props.data.icon} size={90} />
           </div>
           <div className="col-4" id="city-time-description">
             <h1 id="city" className="text-capitalize">

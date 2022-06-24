@@ -59,6 +59,7 @@
 }
 #weather-icon {
   margin: 20px auto 0;
+  padding-left: 50px;
 }
 #current-location {
   background-color: #d9ecee;

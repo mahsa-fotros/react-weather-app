@@ -1,0 +1,18 @@
+.WeatherForecast {
+  max-width: 120px;
+  border: 1px solid #87ceeb;
+  border-radius: 10px;
+  border-style: outset;
+  display: block;
+  margin: 20px auto 40px;
+  padding: 20px;
+  background-color: #d9ecee;
+  text-align: center;
+  color: #000080;
+}
+.forecast-day {
+  margin-bottom: 10px;
+}
+.forecast-temperature {
+  margin-top: 10px;
+}
