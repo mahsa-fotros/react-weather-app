@@ -47,7 +47,7 @@
   line-height: 1;
 }
 .weather-parameters .degree-symbol {
-  font-size: 15px;
+  font-size: 20px;
   position: relative;
   top: -36px;
 }
@@ -76,4 +76,21 @@
   font-size: 41px;
   font-weight: bolder;
   line-height: 1;
+}
+@media (max-width: 900px) {
+  #city-time-description #city {
+    font-size: 20px;
+  }
+  .weather-parameters strong {
+    font-size: 30px;
+  }
+  .weather-parameters .degree-symbol {
+    font-size: 15px;
+    position: relative;
+    top: -19px;
+  }
+  #weather-icon {
+    margin: 20px auto 0;
+    padding-left: 0px;
+  }
 }
