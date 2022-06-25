@@ -1,5 +1,5 @@
-.WeatherForecast {
-  max-width: 120px;
+.WeatherForecastDay {
+  max-width: 130px;
   border: 1px solid #87ceeb;
   border-radius: 10px;
   border-style: outset;
@@ -9,6 +9,10 @@
   background-color: #d9ecee;
   text-align: center;
   color: #000080;
+}
+.five-day-forecast {
+  max-width: 730px;
+  margin: 0 auto;
 }
 .forecast-day {
   margin-bottom: 10px;
